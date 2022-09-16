@@ -57,6 +57,11 @@ form .form-inner .form-group {
     margin-bottom: 15px;
 }
 
+.form-inner .error {
+    margin: 20px 0px;
+    color: #FE4880;
+}
+
 .form-inner .form-group label {
     display: block;
     color: #666;
