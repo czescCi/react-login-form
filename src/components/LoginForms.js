@@ -27,6 +27,7 @@ function LoginForms({ Login, error }) {
       <form onSubmit={submitHandler}>
           <div className="form-inner">
               <h2>Login</h2>
+              {(error !== "") ? (<div className="error">{error}</div>) : ""}
               <div className="form-group">
                   <label htmlFor='name'>Name:</label>
                   <input 
@@ -57,7 +58,7 @@ function LoginForms({ Login, error }) {
                   onChange={changePassword}
                   />
               </div>
-              <input type='submit' value='login' />
+              <input type='submit' value='LOGIN' />
           </div>
       </form>
     </div>
